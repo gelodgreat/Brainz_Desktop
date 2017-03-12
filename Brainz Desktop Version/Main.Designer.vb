@@ -22,26 +22,26 @@ Partial Class Main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.RadButton1 = New Telerik.WinControls.UI.RadButton()
+        Me.btn_createreviewer = New Telerik.WinControls.UI.RadButton()
         Me.RadButton2 = New Telerik.WinControls.UI.RadButton()
         Me.RadButton3 = New Telerik.WinControls.UI.RadButton()
-        CType(Me.RadButton1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btn_createreviewer, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadButton3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'RadButton1
+        'btn_createreviewer
         '
-        Me.RadButton1.Location = New System.Drawing.Point(270, 210)
-        Me.RadButton1.Name = "RadButton1"
-        Me.RadButton1.Size = New System.Drawing.Size(110, 73)
-        Me.RadButton1.TabIndex = 0
-        Me.RadButton1.Text = "RadButton1"
+        Me.btn_createreviewer.Location = New System.Drawing.Point(38, 139)
+        Me.btn_createreviewer.Name = "btn_createreviewer"
+        Me.btn_createreviewer.Size = New System.Drawing.Size(110, 73)
+        Me.btn_createreviewer.TabIndex = 0
+        Me.btn_createreviewer.Text = "Create Reviewer"
         '
         'RadButton2
         '
-        Me.RadButton2.Location = New System.Drawing.Point(386, 210)
+        Me.RadButton2.Location = New System.Drawing.Point(154, 139)
         Me.RadButton2.Name = "RadButton2"
         Me.RadButton2.Size = New System.Drawing.Size(110, 73)
         Me.RadButton2.TabIndex = 1
@@ -49,7 +49,7 @@ Partial Class Main
         '
         'RadButton3
         '
-        Me.RadButton3.Location = New System.Drawing.Point(502, 210)
+        Me.RadButton3.Location = New System.Drawing.Point(270, 139)
         Me.RadButton3.Name = "RadButton3"
         Me.RadButton3.Size = New System.Drawing.Size(110, 73)
         Me.RadButton3.TabIndex = 2
@@ -59,17 +59,17 @@ Partial Class Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(940, 535)
+        Me.ClientSize = New System.Drawing.Size(422, 234)
         Me.Controls.Add(Me.RadButton3)
         Me.Controls.Add(Me.RadButton2)
-        Me.Controls.Add(Me.RadButton1)
+        Me.Controls.Add(Me.btn_createreviewer)
         Me.Name = "Main"
         '
         '
         '
         Me.RootElement.ApplyShapeToControl = True
         Me.Text = "Main"
-        CType(Me.RadButton1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btn_createreviewer, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadButton2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadButton3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
@@ -77,7 +77,7 @@ Partial Class Main
 
     End Sub
 
-    Friend WithEvents RadButton1 As Telerik.WinControls.UI.RadButton
+    Friend WithEvents btn_createreviewer As Telerik.WinControls.UI.RadButton
     Friend WithEvents RadButton2 As Telerik.WinControls.UI.RadButton
     Friend WithEvents RadButton3 As Telerik.WinControls.UI.RadButton
 End Class

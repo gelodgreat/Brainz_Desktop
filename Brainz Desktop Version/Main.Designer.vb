@@ -23,62 +23,66 @@ Partial Class Main
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btn_createreviewer = New Telerik.WinControls.UI.RadButton()
-        Me.RadButton2 = New Telerik.WinControls.UI.RadButton()
-        Me.RadButton3 = New Telerik.WinControls.UI.RadButton()
+        Me.btn_export_db = New Telerik.WinControls.UI.RadButton()
+        Me.btn_import = New Telerik.WinControls.UI.RadButton()
         CType(Me.btn_createreviewer, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RadButton2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RadButton3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btn_export_db, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btn_import, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btn_createreviewer
         '
-        Me.btn_createreviewer.Location = New System.Drawing.Point(38, 139)
+        Me.btn_createreviewer.Location = New System.Drawing.Point(25, 12)
         Me.btn_createreviewer.Name = "btn_createreviewer"
         Me.btn_createreviewer.Size = New System.Drawing.Size(110, 73)
         Me.btn_createreviewer.TabIndex = 0
         Me.btn_createreviewer.Text = "Create Reviewer"
         '
-        'RadButton2
+        'btn_export_db
         '
-        Me.RadButton2.Location = New System.Drawing.Point(154, 139)
-        Me.RadButton2.Name = "RadButton2"
-        Me.RadButton2.Size = New System.Drawing.Size(110, 73)
-        Me.RadButton2.TabIndex = 1
-        Me.RadButton2.Text = "RadButton2"
+        Me.btn_export_db.Location = New System.Drawing.Point(141, 12)
+        Me.btn_export_db.Name = "btn_export_db"
+        Me.btn_export_db.Size = New System.Drawing.Size(110, 73)
+        Me.btn_export_db.TabIndex = 1
+        Me.btn_export_db.Text = "Export Questions"
         '
-        'RadButton3
+        'btn_import
         '
-        Me.RadButton3.Location = New System.Drawing.Point(270, 139)
-        Me.RadButton3.Name = "RadButton3"
-        Me.RadButton3.Size = New System.Drawing.Size(110, 73)
-        Me.RadButton3.TabIndex = 2
-        Me.RadButton3.Text = "RadButton3"
+        Me.btn_import.Location = New System.Drawing.Point(257, 12)
+        Me.btn_import.Name = "btn_import"
+        Me.btn_import.Size = New System.Drawing.Size(110, 73)
+        Me.btn_import.TabIndex = 2
+        Me.btn_import.Text = "Import Questions"
         '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(422, 234)
-        Me.Controls.Add(Me.RadButton3)
-        Me.Controls.Add(Me.RadButton2)
+        Me.ClientSize = New System.Drawing.Size(392, 97)
+        Me.Controls.Add(Me.btn_import)
+        Me.Controls.Add(Me.btn_export_db)
         Me.Controls.Add(Me.btn_createreviewer)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Main"
         '
         '
         '
         Me.RootElement.ApplyShapeToControl = True
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Main"
+        Me.TopMost = True
         CType(Me.btn_createreviewer, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RadButton2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RadButton3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btn_export_db, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btn_import, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents btn_createreviewer As Telerik.WinControls.UI.RadButton
-    Friend WithEvents RadButton2 As Telerik.WinControls.UI.RadButton
-    Friend WithEvents RadButton3 As Telerik.WinControls.UI.RadButton
+    Friend WithEvents btn_export_db As Telerik.WinControls.UI.RadButton
+    Friend WithEvents btn_import As Telerik.WinControls.UI.RadButton
 End Class
 

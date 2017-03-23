@@ -24,35 +24,32 @@ Partial Class Login
     Private Sub InitializeComponent()
         Me.log_btn_login = New Telerik.WinControls.UI.RadButton()
         Me.RadGroupBox1 = New Telerik.WinControls.UI.RadGroupBox()
-        Me.log_tb_username = New Telerik.WinControls.UI.RadTextBox()
-        Me.log_tb_password = New Telerik.WinControls.UI.RadTextBox()
-        Me.RadLabel1 = New Telerik.WinControls.UI.RadLabel()
         Me.RadLabel2 = New Telerik.WinControls.UI.RadLabel()
-        Me.RadGroupBox2 = New Telerik.WinControls.UI.RadGroupBox()
-        Me.log_btn_metro = New Telerik.WinControls.UI.RadButton()
-        Me.log_btn_light = New Telerik.WinControls.UI.RadButton()
-        Me.log_btn_dark = New Telerik.WinControls.UI.RadButton()
+        Me.RadLabel1 = New Telerik.WinControls.UI.RadLabel()
+        Me.log_tb_password = New Telerik.WinControls.UI.RadTextBox()
+        Me.log_tb_username = New Telerik.WinControls.UI.RadTextBox()
         Me.VisualStudio2012DarkTheme1 = New Telerik.WinControls.Themes.VisualStudio2012DarkTheme()
         Me.VisualStudio2012LightTheme1 = New Telerik.WinControls.Themes.VisualStudio2012LightTheme()
         Me.TelerikMetroBlueTheme1 = New Telerik.WinControls.Themes.TelerikMetroBlueTheme()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.pb_settings = New System.Windows.Forms.PictureBox()
+        Me.RadLabel3 = New Telerik.WinControls.UI.RadLabel()
         CType(Me.log_btn_login, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadGroupBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RadGroupBox1.SuspendLayout()
-        CType(Me.log_tb_username, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.log_tb_password, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLabel2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RadGroupBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.RadGroupBox2.SuspendLayout()
-        CType(Me.log_btn_metro, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.log_btn_light, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.log_btn_dark, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.log_tb_password, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.log_tb_username, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb_settings, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadLabel3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'log_btn_login
         '
-        Me.log_btn_login.Location = New System.Drawing.Point(149, 116)
+        Me.log_btn_login.Location = New System.Drawing.Point(156, 172)
         Me.log_btn_login.Name = "log_btn_login"
         Me.log_btn_login.Size = New System.Drawing.Size(110, 33)
         Me.log_btn_login.TabIndex = 1
@@ -61,7 +58,9 @@ Partial Class Login
         'RadGroupBox1
         '
         Me.RadGroupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me.RadGroupBox1.Controls.Add(Me.RadGroupBox2)
+        Me.RadGroupBox1.Controls.Add(Me.RadLabel3)
+        Me.RadGroupBox1.Controls.Add(Me.PictureBox2)
+        Me.RadGroupBox1.Controls.Add(Me.pb_settings)
         Me.RadGroupBox1.Controls.Add(Me.RadLabel2)
         Me.RadGroupBox1.Controls.Add(Me.log_btn_login)
         Me.RadGroupBox1.Controls.Add(Me.RadLabel1)
@@ -74,72 +73,64 @@ Partial Class Login
         Me.RadGroupBox1.Size = New System.Drawing.Size(292, 252)
         Me.RadGroupBox1.TabIndex = 2
         '
-        'log_tb_username
-        '
-        Me.log_tb_username.Location = New System.Drawing.Point(89, 44)
-        Me.log_tb_username.Name = "log_tb_username"
-        Me.log_tb_username.Size = New System.Drawing.Size(170, 20)
-        Me.log_tb_username.TabIndex = 0
-        '
-        'log_tb_password
-        '
-        Me.log_tb_password.Location = New System.Drawing.Point(89, 71)
-        Me.log_tb_password.Name = "log_tb_password"
-        Me.log_tb_password.Size = New System.Drawing.Size(170, 20)
-        Me.log_tb_password.TabIndex = 1
-        '
-        'RadLabel1
-        '
-        Me.RadLabel1.Location = New System.Drawing.Point(24, 46)
-        Me.RadLabel1.Name = "RadLabel1"
-        Me.RadLabel1.Size = New System.Drawing.Size(59, 18)
-        Me.RadLabel1.TabIndex = 2
-        Me.RadLabel1.Text = "Username:"
-        '
         'RadLabel2
         '
-        Me.RadLabel2.Location = New System.Drawing.Point(27, 73)
+        Me.RadLabel2.Location = New System.Drawing.Point(34, 135)
         Me.RadLabel2.Name = "RadLabel2"
         Me.RadLabel2.Size = New System.Drawing.Size(56, 18)
         Me.RadLabel2.TabIndex = 3
         Me.RadLabel2.Text = "Password:"
         '
-        'RadGroupBox2
+        'RadLabel1
         '
-        Me.RadGroupBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me.RadGroupBox2.Controls.Add(Me.log_btn_metro)
-        Me.RadGroupBox2.Controls.Add(Me.log_btn_light)
-        Me.RadGroupBox2.Controls.Add(Me.log_btn_dark)
-        Me.RadGroupBox2.HeaderText = "&Themes"
-        Me.RadGroupBox2.Location = New System.Drawing.Point(12, 175)
-        Me.RadGroupBox2.Name = "RadGroupBox2"
-        Me.RadGroupBox2.Size = New System.Drawing.Size(268, 65)
-        Me.RadGroupBox2.TabIndex = 3
-        Me.RadGroupBox2.Text = "&Themes"
+        Me.RadLabel1.Location = New System.Drawing.Point(31, 108)
+        Me.RadLabel1.Name = "RadLabel1"
+        Me.RadLabel1.Size = New System.Drawing.Size(59, 18)
+        Me.RadLabel1.TabIndex = 2
+        Me.RadLabel1.Text = "Username:"
         '
-        'log_btn_metro
+        'log_tb_password
         '
-        Me.log_btn_metro.Location = New System.Drawing.Point(190, 21)
-        Me.log_btn_metro.Name = "log_btn_metro"
-        Me.log_btn_metro.Size = New System.Drawing.Size(73, 33)
-        Me.log_btn_metro.TabIndex = 7
-        Me.log_btn_metro.Text = "Metro"
+        Me.log_tb_password.Location = New System.Drawing.Point(96, 133)
+        Me.log_tb_password.Name = "log_tb_password"
+        Me.log_tb_password.Size = New System.Drawing.Size(170, 20)
+        Me.log_tb_password.TabIndex = 1
         '
-        'log_btn_light
+        'log_tb_username
         '
-        Me.log_btn_light.Location = New System.Drawing.Point(102, 21)
-        Me.log_btn_light.Name = "log_btn_light"
-        Me.log_btn_light.Size = New System.Drawing.Size(73, 33)
-        Me.log_btn_light.TabIndex = 6
-        Me.log_btn_light.Text = "Light"
+        Me.log_tb_username.Location = New System.Drawing.Point(96, 106)
+        Me.log_tb_username.Name = "log_tb_username"
+        Me.log_tb_username.Size = New System.Drawing.Size(170, 20)
+        Me.log_tb_username.TabIndex = 0
         '
-        'log_btn_dark
+        'PictureBox2
         '
-        Me.log_btn_dark.Location = New System.Drawing.Point(12, 21)
-        Me.log_btn_dark.Name = "log_btn_dark"
-        Me.log_btn_dark.Size = New System.Drawing.Size(73, 33)
-        Me.log_btn_dark.TabIndex = 5
-        Me.log_btn_dark.Text = "Dark"
+        Me.PictureBox2.Image = Global.Brainz_Desktop_Version.My.Resources.Resources.brainz
+        Me.PictureBox2.Location = New System.Drawing.Point(9, 12)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(63, 65)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 5
+        Me.PictureBox2.TabStop = False
+        '
+        'pb_settings
+        '
+        Me.pb_settings.Image = Global.Brainz_Desktop_Version.My.Resources.Resources._1490244831_Settings_2
+        Me.pb_settings.Location = New System.Drawing.Point(221, 12)
+        Me.pb_settings.Name = "pb_settings"
+        Me.pb_settings.Size = New System.Drawing.Size(63, 65)
+        Me.pb_settings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pb_settings.TabIndex = 4
+        Me.pb_settings.TabStop = False
+        '
+        'RadLabel3
+        '
+        Me.RadLabel3.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadLabel3.Location = New System.Drawing.Point(93, 12)
+        Me.RadLabel3.Name = "RadLabel3"
+        Me.RadLabel3.Size = New System.Drawing.Size(115, 33)
+        Me.RadLabel3.TabIndex = 6
+        Me.RadLabel3.Text = "Brainz Inc."
         '
         'Login
         '
@@ -160,15 +151,13 @@ Partial Class Login
         CType(Me.RadGroupBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RadGroupBox1.ResumeLayout(False)
         Me.RadGroupBox1.PerformLayout()
-        CType(Me.log_tb_username, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.log_tb_password, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RadGroupBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.RadGroupBox2.ResumeLayout(False)
-        CType(Me.log_btn_metro, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.log_btn_light, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.log_btn_dark, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.log_tb_password, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.log_tb_username, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb_settings, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadLabel3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -176,10 +165,6 @@ Partial Class Login
 
     Friend WithEvents log_btn_login As Telerik.WinControls.UI.RadButton
     Friend WithEvents RadGroupBox1 As Telerik.WinControls.UI.RadGroupBox
-    Friend WithEvents RadGroupBox2 As Telerik.WinControls.UI.RadGroupBox
-    Friend WithEvents log_btn_metro As Telerik.WinControls.UI.RadButton
-    Friend WithEvents log_btn_light As Telerik.WinControls.UI.RadButton
-    Friend WithEvents log_btn_dark As Telerik.WinControls.UI.RadButton
     Friend WithEvents RadLabel2 As Telerik.WinControls.UI.RadLabel
     Friend WithEvents RadLabel1 As Telerik.WinControls.UI.RadLabel
     Friend WithEvents log_tb_password As Telerik.WinControls.UI.RadTextBox
@@ -187,5 +172,8 @@ Partial Class Login
     Friend WithEvents VisualStudio2012DarkTheme1 As Telerik.WinControls.Themes.VisualStudio2012DarkTheme
     Friend WithEvents VisualStudio2012LightTheme1 As Telerik.WinControls.Themes.VisualStudio2012LightTheme
     Friend WithEvents TelerikMetroBlueTheme1 As Telerik.WinControls.Themes.TelerikMetroBlueTheme
+    Friend WithEvents pb_settings As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents RadLabel3 As Telerik.WinControls.UI.RadLabel
 End Class
 

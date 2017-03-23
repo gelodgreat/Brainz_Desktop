@@ -90,5 +90,7 @@ Public Class CreateReviewer
 
     End Sub
 
+    Private Sub rgv_questions_CellDoubleClick(sender As Object, e As Telerik.WinControls.UI.GridViewCellEventArgs) Handles rgv_questions.CellDoubleClick
 
+    End Sub
 End Class

@@ -22,7 +22,7 @@ Partial Class CreateReviewer
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim TableViewDefinition2 As Telerik.WinControls.UI.TableViewDefinition = New Telerik.WinControls.UI.TableViewDefinition()
+        Dim TableViewDefinition1 As Telerik.WinControls.UI.TableViewDefinition = New Telerik.WinControls.UI.TableViewDefinition()
         Me.RadGroupBox1 = New Telerik.WinControls.UI.RadGroupBox()
         Me.rgv_questions = New Telerik.WinControls.UI.RadGridView()
         Me.RadGroupBox2 = New Telerik.WinControls.UI.RadGroupBox()
@@ -95,7 +95,7 @@ Partial Class CreateReviewer
         Me.rgv_questions.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill
         Me.rgv_questions.MasterTemplate.EnableGrouping = False
         Me.rgv_questions.MasterTemplate.ShowRowHeaderColumn = False
-        Me.rgv_questions.MasterTemplate.ViewDefinition = TableViewDefinition2
+        Me.rgv_questions.MasterTemplate.ViewDefinition = TableViewDefinition1
         Me.rgv_questions.Name = "rgv_questions"
         Me.rgv_questions.ReadOnly = True
         Me.rgv_questions.Size = New System.Drawing.Size(938, 194)

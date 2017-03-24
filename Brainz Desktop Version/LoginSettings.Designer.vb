@@ -22,6 +22,7 @@ Partial Class LoginSettings
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoginSettings))
         Me.RadGroupBox2 = New Telerik.WinControls.UI.RadGroupBox()
         Me.log_btn_metro = New Telerik.WinControls.UI.RadButton()
         Me.log_btn_light = New Telerik.WinControls.UI.RadButton()
@@ -229,6 +230,7 @@ Partial Class LoginSettings
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.RadGroupBox1)
         Me.Controls.Add(Me.RadGroupBox2)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "LoginSettings"
         '
         '

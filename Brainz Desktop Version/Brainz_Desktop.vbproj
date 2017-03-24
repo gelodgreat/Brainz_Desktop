@@ -47,6 +47,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>brainz_icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data.Entity.EF6, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
@@ -168,6 +171,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\brainz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_lyt_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgboot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gamebackground_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gamebackground_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="brainz_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

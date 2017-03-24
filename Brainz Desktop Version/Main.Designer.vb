@@ -22,6 +22,7 @@ Partial Class Main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.btn_createreviewer = New Telerik.WinControls.UI.RadButton()
         Me.btn_export_db = New Telerik.WinControls.UI.RadButton()
         Me.btn_import = New Telerik.WinControls.UI.RadButton()
@@ -75,6 +76,7 @@ Partial Class Main
         Me.Controls.Add(Me.btn_import)
         Me.Controls.Add(Me.btn_export_db)
         Me.Controls.Add(Me.btn_createreviewer)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Main"

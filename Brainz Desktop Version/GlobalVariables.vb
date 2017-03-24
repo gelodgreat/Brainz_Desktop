@@ -7,4 +7,7 @@ Module GlobalVariables
     Public connstring As String = connection
     Public query As String
 
+    Public Command As MySqlCommand
+    Public dbdataset As New DataTable
+    Public reader As MySqlDataReader
 End Module

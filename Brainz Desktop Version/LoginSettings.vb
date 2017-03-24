@@ -100,5 +100,8 @@ Public Class LoginSettings
 
     End Sub
 
-
+    Private Sub LoginSettings_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Me.Hide()
+        Login.Show()
+    End Sub
 End Class

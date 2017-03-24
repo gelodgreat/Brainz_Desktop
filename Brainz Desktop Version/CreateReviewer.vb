@@ -45,8 +45,9 @@ Public Class CreateReviewer
 
         Try
             mysqlconn.Open()
-            query = "SELECT * FROM reviewer"
+            query = "SELECT * FROM reviewer WHERE userid=@userid"
             Command = New MySqlCommand(query, mysqlconn)
+            Command.Parameters.AddWithValue("userid", Main.mainglobaluserid)
             sda.SelectCommand = Command
             sda.Fill(dbdataset)
             bsource.DataSource = dbdataset
@@ -68,8 +69,9 @@ Public Class CreateReviewer
 
         Try
             mysqlconn.Open()
-            query = "INSERT INTO reviewer (subject,levels,question,cha,chb,chc) VALUES (@subject,@levels,@question,@cha,@chb,@chc)"
+            query = "INSERT INTO reviewer (userid,subject,levels,question,cha,chb,chc) VALUES (@userid,@subject,@levels,@question,@cha,@chb,@chc)"
             Command = New MySqlCommand(query, mysqlconn)
+            Command.Parameters.AddWithValue("userid", Main.mainglobaluserid)
             Command.Parameters.AddWithValue("subject", cb_subjects.Text)
             Command.Parameters.AddWithValue("levels", cb_levels.SelectedItem)
             Command.Parameters.AddWithValue("question", tb_question.Text)
@@ -92,5 +94,10 @@ Public Class CreateReviewer
 
     Private Sub rgv_questions_CellDoubleClick(sender As Object, e As Telerik.WinControls.UI.GridViewCellEventArgs) Handles rgv_questions.CellDoubleClick
 
+    End Sub
+
+    Private Sub CreateReviewer_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Main.Show()
+        Me.Hide()
     End Sub
 End Class

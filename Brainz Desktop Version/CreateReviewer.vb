@@ -45,9 +45,9 @@ Public Class CreateReviewer
 
         Try
             mysqlconn.Open()
-            query = "SELECT * FROM reviewer WHERE userid=@userid"
+            query = "CALL load_questions(@stuid)"
             Command = New MySqlCommand(query, mysqlconn)
-            Command.Parameters.AddWithValue("userid", Main.mainglobaluserid)
+            Command.Parameters.AddWithValue("stuid", Main.mainglobaluserid)
             sda.SelectCommand = Command
             sda.Fill(dbdataset)
             bsource.DataSource = dbdataset
@@ -69,7 +69,7 @@ Public Class CreateReviewer
 
         Try
             mysqlconn.Open()
-            query = "INSERT INTO reviewer (userid,subject,levels,question,cha,chb,chc) VALUES (@userid,@subject,@levels,@question,@cha,@chb,@chc)"
+            query = "CALL add_question(@userid,@subject,@levels,@question,@cha,@chb,@chc)"
             Command = New MySqlCommand(query, mysqlconn)
             Command.Parameters.AddWithValue("userid", Main.mainglobaluserid)
             Command.Parameters.AddWithValue("subject", cb_subjects.Text)

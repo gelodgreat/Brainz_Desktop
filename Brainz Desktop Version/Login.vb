@@ -28,7 +28,7 @@ Public Class Login
 
         Try
             mysqlconn.Open()
-            query = "SELECT * FROM accounts WHERE username=@username AND password=@password OR userid=@username"
+            query = "CALL gologin(@username,@password)"
             Command = New MySqlCommand(query, mysqlconn)
             Command.Parameters.AddWithValue("username", log_tb_username.Text)
             Command.Parameters.AddWithValue("password", log_tb_password.Text)

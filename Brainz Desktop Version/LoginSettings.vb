@@ -44,8 +44,10 @@ Public Class LoginSettings
             Else
 
                 mysqlconn.Open()
-                query = "SELECT * FROM accounts WHERE userid='" & lbl_globaluserid.Text & "' OR username='" & reg_tb_username.Text & "'"
+                query = "CALL log_reg_checkif_existing(@userid,@username)"
                 Command = New MySqlCommand(query, mysqlconn)
+                Command.Parameters.AddWithValue("userid", lbl_globaluserid.Text)
+                Command.Parameters.AddWithValue("username", reg_tb_username.Text)
                 reader = Command.ExecuteReader
                 Dim count As Integer
                 count = 0
@@ -67,7 +69,7 @@ Public Class LoginSettings
 
                         mysqlconn.Close()
                         mysqlconn.Open()
-                        query = "INSERT INTO accounts VALUES (@uid,@bday,@username,@password)"
+                        query = "CALL log_reg_signup(@uid,@bday,@username,@password)"
                         Command = New MySqlCommand(query, mysqlconn)
                         Command.Parameters.AddWithValue("uid", lbl_globaluserid.Text)
                         Command.Parameters.AddWithValue("bday", Format(CDate(rdpt_bday.Value), "yyyy-MM-dd"))
